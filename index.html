@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="nav-portfolio"><a href="#title"><strong>Justin's Portfolio</strong></a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#web-development">Why Web Development?</a></li>
+        </ul>
+    </nav>
+    <div id="title">
+        <h1>All About Justin Mathew</h1>
+    </div>
+    <main>
+        <div id="main">
+            <article id="background">
+                <h1>Background</h1>
+                <p>My name is Justin Mathew. I am currently working as a Field Service Engineer for medical devices. I have a master's degere in Biomedical Engineering 
+                    from Cornell University. I live in the Washington, DC area with my wife and 2 cats: Link and Loki.
+                    <figure>
+                        <img id="link-loki" src="images/Link and Loki 2.JPG" alt="Photo of 2 cats, Link and Loki">
+                        <figcaption>Photo of my 2 cats: Link (top) and Loki (bottom)</figcaption>
+                    </figure>
+                </p>
+            </article>
+            <article id="hobbies">
+                <h1>Hobbies</h1>
+                <ul>
+                    <li>Video games</li>
+                        <ul>
+                            <li>Valorant</li>
+                            <li>League of Legends</li>
+                            <li>All sorts of RPGs (some faves: Witcher 3, God of War) </li>
+                        </ul>
+                    <li>Running</li>
+                    <li>Hanging with friends</li>
+                    <li>Coding (somewhat!)</li>
+                </ul>
+            </article>
+            <article id="web-development">
+                <h1>Why Web Development?</h1>
+                <p>I've been itching to make a career switch for a few years now. Having taken some coding coursework in the past, I figured becoming a web developer
+                    could be a good option for me. I've enjoyed it in the past, so now want to learn enough to make it into a full-fledged career!
+                </p>
+            </article>
+            <hr>
+        </div>
+        <div id="side">
+            <article class="sidebar">
+                <figure>
+                    <img id="self-photo" src="images/MathewJustin-Photo.jpg" alt="Photo of me">
+                    <figcaption>Photo of me!</figcaption>
+                </figure>
+            </article>
+            <article class="sidebar">
+                <h1>Please fill out this survey!</h1>
+                <form action="mailto:jamathew38@gmail.com" method="POST" id="survey">
+                    <p><strong>How did you find this website?</strong></p>
+                    <input type="radio" name="options" value="github" checked="checked">Github
+                    <input type="radio" name="options" value="google">Google
+                    <input type="radio" name="options" value="other">Other
+                    <br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+            <article class="sidebar">  
+                <h1>Got a question for me?</h1>
+                <form action="mailto:jamathew38@gmail.com" method="POST" id="question">
+                    <label for="name"><strong>Name:</strong></label>
+                    <input type="text" class="input" placeholder="Enter name here (optional)">
+                    <br><br>
+                    <label for="question"><strong>Question:</strong></label>
+                    <br>
+                    <textarea class="input" placeholder="What's your question?" rows="5"></textarea>
+                    <br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
